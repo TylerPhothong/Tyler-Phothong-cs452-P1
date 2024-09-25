@@ -1,7 +1,7 @@
 # Makefile
 CC = gcc
 CFLAGS = -Wall -Wextra -g
-LIBS = -lreadline   # Make sure readline is included here
+LIBS = -lreadline 
 SRC = src/main.c src/shell.c
 OBJ = main
 

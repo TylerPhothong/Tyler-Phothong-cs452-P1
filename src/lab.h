@@ -37,7 +37,7 @@ extern "C"
     void parse_args(int argc, char **argv);
 
 #ifdef __cplusplus
-} // extern "C"
+} 
 #endif
 
 #endif

@@ -32,14 +32,14 @@ int main(int argc, char **argv) {
             if (!do_builtin(&my_shell, args)) {
                 pid_t pid = fork();
 
-                if (pid == 0) { // Child process
+                if (pid == 0) { 
                     signal(SIGINT, SIG_DFL);
                     signal(SIGQUIT, SIG_DFL);
                     signal(SIGTSTP, SIG_DFL);
                     execvp(args[0], args);
                     perror("exec failed");
                     exit(EXIT_FAILURE);
-                } else if (pid > 0) { // Parent process
+                } else if (pid > 0) { 
                     waitpid(pid, NULL, 0);
                 } else {
                     perror("fork failed");

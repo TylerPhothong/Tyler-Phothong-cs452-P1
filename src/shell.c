@@ -5,7 +5,7 @@
 #include <pwd.h>
 #include <signal.h>  
 #include <readline/readline.h>
-#include <readline/history.h> // Missing include for HIST_ENTRY and history functions
+#include <readline/history.h>
 #include "lab.h"
 
 char *get_prompt(const char *env) {
